@@ -1,0 +1,6 @@
+import { AlertTriangle, Archive, ArrowLeft, ArrowRight, Bell, BookOpen, Camera, Check, CheckCircle2, ChevronDown, ChevronRight, CircleHelp, Clock3, CloudUpload, Code2, CreditCard, Database, Download, FileCheck2, FileImage, FileSearch, FileStack, FileText, Fingerprint, FolderOpen, Gauge, Globe2, History, Info, LayoutDashboard, Link2, ListFilter, LockKeyhole, Menu, Moon, MoreHorizontal, Palette, PanelLeft, RefreshCcw, ScanLine, Search, Settings2, ShieldAlert, ShieldCheck, ShieldX, Sun, Trash2, Upload, UserRound, X, XCircle, } from 'lucide-react';
+const icons = { AlertTriangle, Archive, ArrowLeft, ArrowRight, Bell, BookOpen, Camera, Check, CheckCircle2, ChevronDown, ChevronRight, CircleHelp, Clock3, CloudUpload, Code2, CreditCard, Database, Download, FileCheck2, FileImage, FileSearch, FileStack, FileText, Fingerprint, FolderOpen, Gauge, Globe2, History, Info, LayoutDashboard, Link2, ListFilter, LockKeyhole, Menu, Moon, MoreHorizontal, Palette, PanelLeft, RefreshCcw, ScanLine, Search, Settings2, ShieldAlert, ShieldCheck, ShieldX, Sun, Trash2, Upload, UserRound, X, XCircle };
+export function Icon({ name, size = 17, className }) {
+    const Component = icons[name] ?? CircleHelp;
+    return <Component size={size} strokeWidth={1.8} className={className} aria-hidden="true"/>;
+}
